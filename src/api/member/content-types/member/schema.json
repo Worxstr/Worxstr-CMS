@@ -41,7 +41,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::blog-post.blog-post",
-      "inversedBy": "authors"
+      "mappedBy": "authors"
     }
   }
 }

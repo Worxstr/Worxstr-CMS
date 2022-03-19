@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "worxstr_blogs",
+  "info": {
+    "singularName": "worxstr-blog",
+    "pluralName": "worxstr-blogs",
+    "displayName": "Worxstr Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blog_blog_post_images",
+  "info": {
+    "displayName": "Blog Post Image",
+    "icon": "file-image"
+  },
+  "options": {},
+  "attributes": {
+    "images": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "caption": {
+      "type": "text"
+    }
+  }
+}

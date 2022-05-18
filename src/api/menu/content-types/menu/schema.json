@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "submenus": {
+      "displayName": "Submenu",
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.submenu",
+      "required": true
+    }
+  }
+}

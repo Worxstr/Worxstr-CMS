@@ -2,7 +2,8 @@
   "collectionName": "components_ui_submenus",
   "info": {
     "displayName": "Submenu",
-    "icon": "bars"
+    "icon": "bars",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,7 +11,7 @@
       "type": "string",
       "required": true
     },
-    "route_name": {
+    "to": {
       "type": "string",
       "required": true
     }

@@ -11,8 +11,8 @@
       "type": "string",
       "required": true
     },
-    "to": {
-      "type": "string",
+    "link": {
+      "type": "json",
       "required": true
     }
   }

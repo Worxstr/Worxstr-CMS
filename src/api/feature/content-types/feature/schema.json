@@ -4,7 +4,8 @@
   "info": {
     "singularName": "feature",
     "pluralName": "features",
-    "displayName": "Feature"
+    "displayName": "Feature",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,23 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "semantic.jumbo",
+        "semantic.feature",
+        "semantic.testimonial",
+        "semantic.carousel",
+        "semantic.feature-list",
+        "semantic.rich-text"
+      ],
+      "required": true,
+      "min": 1
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_semantic_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "carouselItems": {
+      "displayName": "Carousel Item",
+      "type": "component",
+      "repeatable": true,
+      "component": "semantic.carousel-item",
+      "required": true,
+      "max": 1
+    }
+  }
+}

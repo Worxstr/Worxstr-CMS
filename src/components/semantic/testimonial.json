@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_semantic_testimonials",
+  "info": {
+    "displayName": "testimonial",
+    "icon": "quote-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "primaryQuote": {
+      "type": "string",
+      "required": true
+    },
+    "secondaryQuote": {
+      "type": "text"
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "authorTitle": {
+      "type": "string"
+    },
+    "authorImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "accent"
+      ]
+    }
+  }
+}

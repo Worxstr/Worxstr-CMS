@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_semantic_rich_texts",
+  "info": {
+    "displayName": "Rich Text",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

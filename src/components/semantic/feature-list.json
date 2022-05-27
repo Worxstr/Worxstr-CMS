@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_semantic_feature_lists",
+  "info": {
+    "displayName": "Feature List",
+    "icon": "th-large",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "featureListItems": {
+      "displayName": "Feature List Item",
+      "type": "component",
+      "repeatable": true,
+      "component": "semantic.feature-list-item"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "accent"
+      ]
+    },
+    "iconColor": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "accent"
+      ]
+    }
+  }
+}

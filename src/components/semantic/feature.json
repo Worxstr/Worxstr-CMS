@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_semantic_features",
+  "info": {
+    "displayName": "Feature",
+    "icon": "certificate",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaTo": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "accent"
+      ],
+      "required": false
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

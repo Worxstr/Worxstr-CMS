@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_semantic_jumbos",
+  "info": {
+    "displayName": "Jumbo",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaTo": {
+      "type": "json"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "accent"
+      ],
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ratio": {
+      "type": "decimal",
+      "max": 0.9,
+      "min": 0.1
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_semantic_feature_list_items",
+  "info": {
+    "displayName": "Feature List Item",
+    "icon": "grip-lines",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "iconColor": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "accent"
+      ]
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -23,6 +23,7 @@
     "color": {
       "type": "enumeration",
       "enum": [
+        "default",
         "primary",
         "secondary",
         "tertiary",

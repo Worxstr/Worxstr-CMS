@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blog_blog_post_texts",
+  "info": {
+    "displayName": "Article Rich Text",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

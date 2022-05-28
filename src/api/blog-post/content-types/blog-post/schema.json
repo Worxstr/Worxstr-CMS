@@ -4,8 +4,7 @@
   "info": {
     "singularName": "blog-post",
     "pluralName": "blog-posts",
-    "displayName": "Blog Post",
-    "description": ""
+    "displayName": "Blog Post"
   },
   "options": {
     "draftAndPublish": true
@@ -14,8 +13,13 @@
   "attributes": {
     "title": {
       "type": "string",
-      "maxLength": 75,
       "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 400,
+      "minLength": 20
     },
     "url_id": {
       "type": "string",
@@ -23,18 +27,18 @@
       "unique": true,
       "regex": "^[\\.a-zA-Z0-9-_]+$"
     },
-    "description": {
-      "type": "text",
-      "required": false,
-      "maxLength": 150
-    },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::member.member",
+      "inversedBy": "blog_posts"
     },
     "body": {
       "type": "dynamiczone",
@@ -42,13 +46,8 @@
         "article.blog-post-image",
         "article.blog-post-text"
       ],
-      "required": true
-    },
-    "authors": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::member.member",
-      "inversedBy": "blog_posts"
+      "required": true,
+      "min": 1
     }
   }
 }

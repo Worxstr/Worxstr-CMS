@@ -78,6 +78,10 @@
         "grey",
         "blue-grey"
       ]
+    },
+    "dark": {
+      "type": "boolean",
+      "required": false
     }
   }
 }

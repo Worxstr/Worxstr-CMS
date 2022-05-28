@@ -39,8 +39,8 @@
     "body": {
       "type": "dynamiczone",
       "components": [
-        "blog.blog-post-image",
-        "blog.blog-post-text"
+        "article.blog-post-image",
+        "article.blog-post-text"
       ],
       "required": true
     },

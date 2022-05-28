@@ -1,14 +1,13 @@
 {
   "kind": "collectionType",
-  "collectionName": "features",
+  "collectionName": "industries",
   "info": {
-    "singularName": "feature",
-    "pluralName": "features",
-    "displayName": "Feature",
-    "description": ""
+    "singularName": "industry",
+    "pluralName": "industries",
+    "displayName": "Industry"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -17,22 +16,9 @@
       "required": true,
       "unique": true
     },
-    "name": {
+    "Name": {
       "type": "string",
       "required": true
-    },
-    "body": {
-      "type": "dynamiczone",
-      "components": [
-        "semantic.carousel",
-        "semantic.feature",
-        "semantic.feature-list",
-        "semantic.jumbo",
-        "semantic.rich-text",
-        "semantic.testimonial"
-      ],
-      "required": true,
-      "min": 1
     },
     "color": {
       "type": "enumeration",
@@ -63,7 +49,21 @@
         "grey",
         "blue-grey"
       ],
-      "default": "primary",
+      "required": true
+    },
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "semantic.carousel-item",
+        "semantic.carousel",
+        "semantic.feature-list-item",
+        "semantic.feature-list",
+        "semantic.feature",
+        "semantic.jumbo",
+        "semantic.rich-text",
+        "semantic.testimonial"
+      ],
+      "min": 1,
       "required": true
     }
   }

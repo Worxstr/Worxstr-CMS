@@ -43,6 +43,12 @@
       ],
       "required": true,
       "min": 1
+    },
+    "support_tag": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::support-tag.support-tag",
+      "inversedBy": "support_articles"
     }
   }
 }

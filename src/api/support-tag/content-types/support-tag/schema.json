@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "support_tags",
+  "info": {
+    "singularName": "support-tag",
+    "pluralName": "support-tags",
+    "displayName": "Support Tag"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[\\.a-zA-Z0-9-]+$"
+    },
+    "support_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::support-article.support-article",
+      "mappedBy": "support_tag"
+    }
+  }
+}

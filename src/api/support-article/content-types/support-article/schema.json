@@ -45,9 +45,9 @@
       "required": true,
       "min": 1
     },
-    "support_tag": {
+    "support_tags": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::support-tag.support-tag",
       "inversedBy": "support_articles"
     }

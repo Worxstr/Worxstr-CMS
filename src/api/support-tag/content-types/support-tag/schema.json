@@ -18,16 +18,16 @@
       "unique": true,
       "regex": "^[\\.a-zA-Z0-9-]+$"
     },
-    "support_articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::support-article.support-article",
-      "mappedBy": "support_tag"
-    },
     "is_topic": {
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "support_articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::support-article.support-article",
+      "inversedBy": "support_tags"
     }
   }
 }

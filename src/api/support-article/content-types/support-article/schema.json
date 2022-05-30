@@ -4,7 +4,8 @@
   "info": {
     "singularName": "support-article",
     "pluralName": "support-articles",
-    "displayName": "Support Article"
+    "displayName": "Support Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,8 +17,8 @@
       "required": true
     },
     "description": {
-      "type": "text",
-      "required": true,
+      "type": "string",
+      "required": false,
       "maxLength": 400,
       "minLength": 20
     },
@@ -28,12 +29,12 @@
       "unique": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": false
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "body": {
       "type": "dynamiczone",

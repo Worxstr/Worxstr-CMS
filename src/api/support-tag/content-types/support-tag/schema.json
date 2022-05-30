@@ -4,7 +4,8 @@
   "info": {
     "singularName": "support-tag",
     "pluralName": "support-tags",
-    "displayName": "Support Tag"
+    "displayName": "Support Tag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -22,6 +23,11 @@
       "relation": "oneToMany",
       "target": "api::support-article.support-article",
       "mappedBy": "support_tag"
+    },
+    "is_topic": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

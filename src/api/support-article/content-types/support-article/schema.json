@@ -19,8 +19,7 @@
     "description": {
       "type": "string",
       "required": false,
-      "maxLength": 400,
-      "minLength": 20
+      "maxLength": 400
     },
     "url_id": {
       "type": "string",

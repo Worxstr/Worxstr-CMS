@@ -27,7 +27,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::support-article.support-article",
-      "inversedBy": "support_tags"
+      "mappedBy": "support_tags"
     }
   }
 }
